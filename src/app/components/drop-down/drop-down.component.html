@@ -1,3 +1,3 @@
-<p>
-  drop-down works!
-</p>
+<input type="number" [value]="selected" (input)="changedValue($event.target.value)">
+<app-drop-down-list ></app-drop-down-list>
+<!-- [(selected)]="selected" -->
