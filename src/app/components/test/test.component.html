@@ -1,7 +1,10 @@
 <H1>
     TESTE
 </H1>
-teste - {{selected}} <br>
 <mat-slider [(ngModel)]="selected" [disabled]="isToDisabledSlider" [max]="max" [min]="min"></mat-slider>
 <br>
-<drop-down [(selected)]="selected" (selectedChange)="changed($event)"></drop-down>
+<drop-down [data]="data" [(selected)]="selected" (selectedChange)="changed($event)"></drop-down>
+
+
+
+teste - {{selected}} <br>
