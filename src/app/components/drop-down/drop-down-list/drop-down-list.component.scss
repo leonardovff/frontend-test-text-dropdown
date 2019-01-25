@@ -1,6 +1,11 @@
+:host{
+    overflow: auto;
+    height: 200px;
+}
 ul {
     background: white;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    border-top: 5px solid white;
     border-bottom: 5px solid white;
     cursor: pointer;
 }

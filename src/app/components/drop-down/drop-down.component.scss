@@ -1,3 +1,6 @@
+:host{
+    position: relative;
+}
 input{
     width: 100%;
     border: 3px solid #5bb1c1;
@@ -17,4 +20,8 @@ input{
 }
 input:focus, input:hover{
     background-size: 0;
+}
+app-drop-down-list{ 
+    width: 100%;
+    position: absolute;   
 }
