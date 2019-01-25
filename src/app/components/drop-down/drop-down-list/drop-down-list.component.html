@@ -1,3 +1,5 @@
-<p>
-  drop-down-list works!
-</p>
+<ul *ngIf="isOpen">
+  <li *ngFor="let row of data" (click)="clickHandle(row)">
+    {{row}}
+  </li>
+</ul>

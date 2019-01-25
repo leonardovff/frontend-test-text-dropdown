@@ -1,0 +1,12 @@
+ul {
+    background: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    border-bottom: 5px solid white;
+    cursor: pointer;
+}
+ul li{
+    padding: 15px 15px;
+}
+ul li:hover{
+    background: #f1f1f1;
+}
