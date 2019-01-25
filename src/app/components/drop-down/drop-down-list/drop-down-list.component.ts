@@ -36,12 +36,10 @@ export class DropDownListComponent implements OnChanges, OnInit {
   setHeight(){
     if(this.isOpen){
       const heightWanted = 250;
-      if(this.isOpen){
-        const top = this.drop.nativeElement.getBoundingClientRect().top;
-        const maxHeight = (top + heightWanted) > window.innerHeight ? 
-          window.innerHeight - top - 20 : heightWanted;
-        this.drop.nativeElement.parentElement.style.maxHeight = maxHeight + "px";
-      }
+      const top = this.drop.nativeElement.getBoundingClientRect().top;
+      const maxHeight = (top + heightWanted) > window.innerHeight ? 
+        window.innerHeight - top - 20 : heightWanted;
+      this.drop.nativeElement.parentElement.style.maxHeight = maxHeight + "px";
     }
   }
   ngOnChanges() {

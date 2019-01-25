@@ -15,7 +15,7 @@ export class DropDownComponent implements OnInit {
   @Input() data: number[];
   @Input() selected: number;
   @Output() selectedChange: EventEmitter<number> = new EventEmitter();
-  private isOpen: boolean = false;
+  isOpen: boolean = false;
 
   constructor() { }
 
@@ -24,7 +24,7 @@ export class DropDownComponent implements OnInit {
   }
   focusHandle(cond){
     if(!cond){
-      setTimeout(() => {
+      return setTimeout(() => {
         this.isOpen = false;
       }, 100);
     }
