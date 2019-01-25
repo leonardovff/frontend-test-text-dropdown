@@ -3,14 +3,11 @@ import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 @Component({
   selector: 'drop-down',
   template: `
-
-    {{isOpen}}
-    <input placeholder="Selecione ou digite um valor" type="number" [value]="selected" 
+    <input onlyNumbers placeholder="Selecione ou digite um valor" type="number" [value]="selected" 
       (focus)="focusHandle(true)" (focusout)="focusHandle(false)" (input)="changedValue($event.target.value)">
     <br>
     <app-drop-down-list [(isOpen)]="isOpen" [data]="data" (selected)="changedValue($event)">
     </app-drop-down-list> 
-    <!-- (selected)="selected" -->
   `,
   styleUrls: ['./drop-down.component.scss']
 })
