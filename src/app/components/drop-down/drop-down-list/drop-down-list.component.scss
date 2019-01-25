@@ -1,6 +1,7 @@
 :host{
     overflow: auto;
-    height: 200px;
+    max-height: 0;
+    transition: max-height 0.2s linear;
 }
 ul {
     background: white;
